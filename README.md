@@ -1,12 +1,8 @@
 # Contacts_ASP.NET_MVC
-CRUD desenvolvido em ASP.NET MVC apontando para banco local SQL Server.
+CRUD desenvolvido em ASP.NET Core MVC com EF (Entity Framework) e SQL Server (mssql).
 
 ## Description
-O projeto contém páginas desenvolvidas em ASP.NET MVC.
-Além disso, conta com o ORM (Object–Relational Mapping) EF (Entity Framework) que permite 
-ao desenvolvedor trabalhar com dados usando objetos e propriedades de classes específicas sem se 
-preocupar com o BP em si. Isso permite que o dev trabalhe de forma mais abstrata e num modelo 
-orientado a dados.
+CRUD de Gerenciamento de Contatos, onde é possível adicionar, atualizar, remover e buscar contatos.
 
 ## Installation
 - Baixar e instalar o Visual Studio (caso não tenha);
