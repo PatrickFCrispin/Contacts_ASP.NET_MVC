@@ -2,7 +2,7 @@
 CRUD desenvolvido em ASP.NET Core MVC com EF (Entity Framework) e SQL Server (mssql).
 
 ## Description
-CRUD de Gerenciamento de Contatos, onde é possível adicionar, atualizar, remover e buscar contatos.
+CRUD de contatos, onde é possível adicionar, atualizar, remover e buscar contatos.
 
 ## Installation
 - SQL Server
