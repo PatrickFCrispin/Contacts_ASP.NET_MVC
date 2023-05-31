@@ -1,4 +1,4 @@
-# CRUD_Contacts_ASP.NET_MVC
+# Contacts_ASP.NET_MVC
 CRUD desenvolvido em ASP.NET MVC apontando para banco local SQL Server.
 
 ## Description
