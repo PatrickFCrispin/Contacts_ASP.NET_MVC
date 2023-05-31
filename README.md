@@ -20,7 +20,6 @@ CRUD de contatos, onde é possível adicionar, listar, atualizar e remover os co
 		- Pronto, o database foi criado em seu SQL Server Management Studio.
 
 ## Usage
-- Compilar o projeto no Visual Studio;
+- Compilar o projeto no Visual Studio
 	- Clean e Rebuild.
-- Rodar o projeto (F5).
-- Realizar as operações CRUD e se divertir.
+- Rodar o projeto.
