@@ -44,12 +44,10 @@ $(document).ready(function () {
 // Método chamado na listagem para exibir os dados do contato numa modal
 function ShowDetailsModal(id) {
     let request = new Request(`/Contacts/Details/${id}`)
-    console.log(request)
 
     fetch(request)
         .then(response => response.json())
         .then(data => {
-            console.log(data)
             let html = "<div>";
             html += "<span>"
             html += `<strong>Id</strong>: ${data.id}`
