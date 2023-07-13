@@ -1,0 +1,31 @@
+﻿@model AuthModel
+@{
+    Layout = "_LayoutForLogin";
+    ViewData["Title"] = "Autenticação";
+}
+
+<h1 class="display-4 text-center">Bem-vindo ao Controle de Contatos</h1>
+
+@if (TempData["ErrorMessage"] is not null)
+{
+    <div class="alert alert-danger" role="alert">
+        <span>@TempData["ErrorMessage"]</span>
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+<form asp-controller="Auth" asp-action="AttemptToLogin" method="post">
+    <div class="mb-3">
+        <label for="username" class="form-label">Usuário</label>
+        <input type="text" asp-for="Username" class="form-control" id="username">
+        @Html.ValidationMessageFor(x => x.Username)
+    </div>
+
+    <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" asp-for="Password" class="form-control" id="password">
+        @Html.ValidationMessageFor(x => x.Password)
+    </div>
+
+    <button type="submit" class="btn btn-primary form-control">Entrar</button>
+</form>

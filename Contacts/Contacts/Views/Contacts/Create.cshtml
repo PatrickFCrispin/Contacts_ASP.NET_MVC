@@ -1,0 +1,40 @@
+﻿@model ContactModel
+@{
+    ViewData["Title"] = "Novo";
+}
+
+<h1 class="display-4">Novo contato</h1>
+
+@if (TempData["ErrorMessage"] is not null)
+{
+    <div class="alert alert-danger" role="alert">
+        <span>@TempData["ErrorMessage"]</span>
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+<form asp-controller="Contacts" asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" asp-for="Name" class="form-control" id="name" placeholder="Nome">
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" asp-for="Email" class="form-control" id="email" placeholder="E-mail">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="phone">Telefone</label>
+        <input type="text" asp-for="Phone" class="form-control" id="phone" placeholder="Número de telefone">
+        @Html.ValidationMessageFor(x => x.Phone)
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary form-control">Adicionar</button>
+    <a class="btn btn-link form-control" role="button" asp-controller="Contacts" asp-action="Index">Voltar</a>
+</form>

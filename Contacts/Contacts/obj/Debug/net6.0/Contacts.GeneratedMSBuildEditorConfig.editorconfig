@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Contacts
+build_property.RootNamespace = Contacts
+build_property.ProjectDir = C:\Users\Patri\OneDrive\Área de Trabalho\Contacts_ASP.NET_MVC\Contacts\Contacts\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Patri\OneDrive\Área de Trabalho\Contacts_ASP.NET_MVC\Contacts\Contacts
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Auth/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Contacts/ConfirmRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ29uZmlybVJlbW92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Contacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Contacts/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Shared/Components/Menu/Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxNZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Users/ConfirmRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ29uZmlybVJlbW92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Users/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2xdc3wshes
+
+[C:/Users/Patri/OneDrive/Área de Trabalho/Contacts_ASP.NET_MVC/Contacts/Contacts/Views/Shared/_LayoutForLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGb3JMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ar1z6zjgji

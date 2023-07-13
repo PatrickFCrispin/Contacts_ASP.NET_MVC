@@ -1,0 +1,80 @@
+﻿@model IEnumerable<ContactModel>
+@{
+    ViewData["Title"] = "Contatos";
+}
+
+<h1 class="display-4">Lista de contatos</h1>
+
+@if (TempData["SuccessMessage"] is not null)
+{
+    <div class="alert alert-success" role="alert">
+        <span>@TempData["SuccessMessage"]</span>
+        <button type="button" class="btn btn-success btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] is not null)
+{
+    <div class="alert alert-danger" role="alert">
+        <span>@TempData["ErrorMessage"]</span>
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Contacts" asp-action="Create">Novo contato</a>
+</div>
+<br />
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Telefone</th>
+            <th scope="col">Criado em</th>
+            <th scope="col">Atualizado em</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model is not null && Model.Any())
+        {
+            foreach (var contact in Model)
+            {
+                <tr class="align-middle">
+                    <th scope="row">@contact.Id</th>
+                    <td>@contact.Name</td>
+                    <td>@contact.Email</td>
+                    <td>@contact.Phone</td>
+                    <td>@contact.CreatedAt</td>
+                    <td>@(contact.UpdatedAt.HasValue ? contact.UpdatedAt : "-")</td>
+                    <td>
+                        <div>
+                            <a class="btn btn-link" role="button" onclick="ShowDetailsModal('@contact.Id')">Detalhes</a>
+                            <a class="btn btn-primary" role="button" asp-controller="Contacts" asp-action="Update" asp-route-id="@contact.Id">Atualizar</a>
+                            <a class="btn btn-danger" role="button" asp-controller="Contacts" asp-action="ConfirmRemove" asp-route-id="@contact.Id">Remover</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+<!--Modal-->
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" style="max-width: 50%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Detalhes do contato</h5>
+            </div>
+            <div class="modal-body" id="contact-content"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link close-details" arial-label="close">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>

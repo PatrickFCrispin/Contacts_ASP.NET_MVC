@@ -1,0 +1,66 @@
+﻿@model IEnumerable<UserModel>
+@{
+    ViewData["Title"] = "Usuários";
+}
+
+<h1 class="display-4">Lista de usuários</h1>
+
+@if (TempData["SuccessMessage"] is not null)
+{
+    <div class="alert alert-success" role="alert">
+        <span>@TempData["SuccessMessage"]</span>
+        <button type="button" class="btn btn-success btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] is not null)
+{
+    <div class="alert alert-danger" role="alert">
+        <span>@TempData["ErrorMessage"]</span>
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="close">X</button>
+    </div>
+}
+
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Users" asp-action="Create">Novo usuário</a>
+</div>
+<br />
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Login</th>
+            <th scope="col">Perfil</th>
+            <th scope="col">Criado em</th>
+            <th scope="col">Atualizado em</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model is not null && Model.Any())
+        {
+            foreach (var users in Model)
+            {
+                <tr class="align-middle">
+                    <th scope="row">@users.Id</th>
+                    <td>@users.Name</td>
+                    <td>@users.Email</td>
+                    <td>@users.Username</td>
+                    <td>@(users.Perfil == Contacts.Enums.PerfilEnum.Admin ? "Administrador" : "Usuário")</td>
+                    <td>@users.CreatedAt</td>
+                    <td>@(users.UpdatedAt.HasValue ? users.UpdatedAt : "-")</td>
+                    <td>
+                        <div>
+                            <a class="btn btn-primary" role="button" asp-controller="Users" asp-action="Update" asp-route-id="@users.Id">Atualizar</a>
+                            <a class="btn btn-danger" role="button" asp-controller="Users" asp-action="ConfirmRemove" asp-route-id="@users.Id">Remover</a>
+                        </div>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
