@@ -13,7 +13,7 @@
     </div>
 }
 
-<form asp-controller="Contacts" asp-action="Update" method="post">
+<form autocomplete="off" asp-controller="Contacts" asp-action="Update" method="post">
     @Html.HiddenFor(x => x.Id)
     <div class="form-group">
         <label for="name">Nome</label>
