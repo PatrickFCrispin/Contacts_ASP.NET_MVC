@@ -15,9 +15,9 @@ CRUD de contatos, onde é possível adicionar, listar, atualizar e remover os co
 	- Em "appsettings.json" atualizar os valores da config com os dados do seu banco de dados SQL Server (Server, User Id, Password).
    	- O passo a passo abaixo é encontrado também no arquivo AddMigrations.txt
 		- Abrir Tools > NuGet Package Manager > Package Manager Console.
-		- Entrar com o comando "add-migration ContactsManagerDB -context DBContext".
+		- Entrar com o comando "add-migration ContactsManagerDB -context DBContext"
 			- Espere realizar a criação do Migrations.
-		- Entrar com o comando "update-database".
+		- Entrar com o comando "update-database"
 			- Pronto, o database foi criado em seu SQL Server Management Studio.
 
 ## Usage
