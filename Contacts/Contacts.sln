@@ -5,6 +5,12 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts", "Contacts\Contacts.csproj", "{BE9ECE6F-8CFF-40DA-B9B6-C3BD1BFC5E85}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1068CD3-84D6-494D-9995-F4FF9ED378EA}"
+	ProjectSection(SolutionItems) = preProject
+		AddMigrations.txt = AddMigrations.txt
+		CreateAdmin.sql = CreateAdmin.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -1,0 +1,4 @@
+Após ajustar os valores de sua ConnectionString (appsettings.json), siga o passo a passo abaixo:
+1. Tools > NuGet Package Manager > Package Manager Console.
+2. Entre com o comando -> "add-migration ContactsManagerDB -context DBContext".
+3. Entre com o comando -> "update-database".
